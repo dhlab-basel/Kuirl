@@ -1,5 +1,5 @@
 <!-- Step1: form to select one project, one ontology, one resource with label -->
-<form *ngIf="selectResourceForm && showNextStepForm" [formGroup]="selectResourceForm" class="resource-instance-form stepOne form-content" (ngSubmit)="nextStep()">
+<form *ngIf="selectResourceForm && showNextStepForm" [formGroup]="selectResourceForm" class="resource-instance-form stepOne new-res-form-content" (ngSubmit)="nextStep()">
 
     <!-- select one project -->
     <div *ngIf="usersProjects?.length > 0">
@@ -42,7 +42,7 @@
     </p>
 
     <!-- action buttons: cancel and next -->
-    <div class="form-panel large-field">
+    <div class="form-panel action-button">
         <span>
             <button mat-button type="button" (click)="closeDialog.emit()">
                 {{ 'appLabels.form.action.cancel' | translate }}
@@ -60,7 +60,7 @@
 </form>
 
 <!-- Step2: create property values and submit data -->
-<form *ngIf="propertiesParentForm && !showNextStepForm" [formGroup]="propertiesParentForm" class="resource-instance-form stepTwo form-content" (ngSubmit)="submitData()">
+<form *ngIf="propertiesParentForm && !showNextStepForm" [formGroup]="propertiesParentForm" class="resource-instance-form stepTwo new-res-form-content" (ngSubmit)="submitData()">
 
     <!-- create property values -->
     <app-select-properties

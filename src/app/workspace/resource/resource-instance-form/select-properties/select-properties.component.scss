@@ -16,7 +16,7 @@
 
     .properties {
         grid-column: 1 / span 6;
-        margin-top: 16px;
+        margin-top: 8px;
 
         .border-bottom {
             width: 650px;
@@ -27,7 +27,7 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 16px;
-            margin-top: 16px;
+            margin-top: 8px;
 
             .property-label,
             .property-value {
