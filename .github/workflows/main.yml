@@ -18,6 +18,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install dev dependencies
+        run: npm install -D
+      - name: Pull DSP libraries
+        run: git submodule update --init --recursive
+      - name: Build DSP libraries
+        run: npm run build-dsp-ui
       - name: Install dependencies
         run: npm install
       - name: Build app in prod mode
