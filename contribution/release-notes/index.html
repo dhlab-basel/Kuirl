@@ -1,0 +1,2067 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/icons/dasch-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>Release Notes - DSP-APP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/style/theme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="DSP-APP" class="md-header-nav__button md-logo" aria-label="DSP-APP">
+      
+  <img src="../../assets/icons/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DSP-APP
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Release Notes
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/dasch-swiss/dsp-app/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dasch-swiss/dsp-app
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../user-guide/" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" class="md-tabs__link md-tabs__link--active">
+          Contribution
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DSP-APP" class="md-nav__button md-logo" aria-label="DSP-APP">
+      
+  <img src="../../assets/icons/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    DSP-APP
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/dasch-swiss/dsp-app/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dasch-swiss/dsp-app
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/project/" title="Project Administration" class="md-nav__link">
+      Project Administration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/system/" title="System Administration" class="md-nav__link">
+      System Administration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/data/" title="Data Management" class="md-nav__link">
+      Data Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/user/" title="User Profile" class="md-nav__link">
+      User Profile
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Contribution
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contribution" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="How to contribute" class="md-nav__link">
+      How to contribute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docs-documentation/" title="Docs Documentation" class="md-nav__link">
+      Docs Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Release Notes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Release Notes" class="md-nav__link md-nav__link--active">
+      Release Notes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#500-2021-07-05" class="md-nav__link">
+    5.0.0 (2021-07-05)
+  </a>
+  
+    <nav class="md-nav" aria-label="5.0.0 (2021-07-05)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    ⚠ BREAKING CHANGES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4111-2021-06-23" class="md-nav__link">
+    4.11.1 (2021-06-23)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_1" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_1" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4110-2021-06-22" class="md-nav__link">
+    4.11.0 (2021-06-22)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.11.0 (2021-06-22)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_1" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_2" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_2" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4101-2021-06-15" class="md-nav__link">
+    4.10.1 (2021-06-15)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_3" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_3" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4100-2021-06-07" class="md-nav__link">
+    4.10.0 (2021-06-07)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.10.0 (2021-06-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_2" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#491-2021-05-26" class="md-nav__link">
+    4.9.1 (2021-05-26)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_4" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#490-2021-05-26" class="md-nav__link">
+    4.9.0 (2021-05-26)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.9.0 (2021-05-26)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_4" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_3" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_5" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#480-2021-05-21" class="md-nav__link">
+    4.8.0 (2021-05-21)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.8.0 (2021-05-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_6" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_4" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#470-2021-05-07" class="md-nav__link">
+    4.7.0 (2021-05-07)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7.0 (2021-05-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_7" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_5" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#460-2021-04-27" class="md-nav__link">
+    4.6.0 (2021-04-27)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6.0 (2021-04-27)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_6" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452-2021-04-22" class="md-nav__link">
+    4.5.2 (2021-04-22)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_1" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_8" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#451-2021-04-20" class="md-nav__link">
+    4.5.1 (2021-04-20)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_2" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#450-2021-04-20" class="md-nav__link">
+    4.5.0 (2021-04-20)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.0 (2021-04-20)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_3" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_7" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-2021-04-14" class="md-nav__link">
+    4.4.3 (2021-04-14)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_4" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-2021-04-12" class="md-nav__link">
+    4.4.2 (2021-04-12)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_9" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#441-2021-04-08" class="md-nav__link">
+    4.4.1 (2021-04-08)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_10" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#440-2021-03-23" class="md-nav__link">
+    4.4.0 (2021-03-23)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4.0 (2021-03-23)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_5" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_11" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_8" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#431-2021-03-03" class="md-nav__link">
+    4.3.1 (2021-03-03)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_6" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#430-2021-03-02" class="md-nav__link">
+    4.3.0 (2021-03-02)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3.0 (2021-03-02)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_7" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_9" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_12" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#421-2021-02-24" class="md-nav__link">
+    4.2.1 (2021-02-24)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_8" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#420-2021-02-22" class="md-nav__link">
+    4.2.0 (2021-02-22)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2.0 (2021-02-22)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_10" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#410-2021-02-12" class="md-nav__link">
+    4.1.0 (2021-02-12)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1.0 (2021-02-12)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation_5" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_13" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_11" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#400-2021-01-28" class="md-nav__link">
+    4.0.0 (2021-01-28)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.0.0 (2021-01-28)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_1" class="md-nav__link">
+    ⚠ BREAKING CHANGES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_9" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_14" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_12" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor" class="md-nav__link">
+    refactor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#300-2020-12-18" class="md-nav__link">
+    3.0.0 (2020-12-18)
+  </a>
+  
+    <nav class="md-nav" aria-label="3.0.0 (2020-12-18)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_2" class="md-nav__link">
+    ⚠ BREAKING CHANGES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_10" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_6" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_13" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_15" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#500-2021-07-05" class="md-nav__link">
+    5.0.0 (2021-07-05)
+  </a>
+  
+    <nav class="md-nav" aria-label="5.0.0 (2021-07-05)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes" class="md-nav__link">
+    ⚠ BREAKING CHANGES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4111-2021-06-23" class="md-nav__link">
+    4.11.1 (2021-06-23)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_1" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_1" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4110-2021-06-22" class="md-nav__link">
+    4.11.0 (2021-06-22)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.11.0 (2021-06-22)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_1" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_2" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_2" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4101-2021-06-15" class="md-nav__link">
+    4.10.1 (2021-06-15)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_3" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_3" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4100-2021-06-07" class="md-nav__link">
+    4.10.0 (2021-06-07)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.10.0 (2021-06-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_2" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#491-2021-05-26" class="md-nav__link">
+    4.9.1 (2021-05-26)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_4" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#490-2021-05-26" class="md-nav__link">
+    4.9.0 (2021-05-26)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.9.0 (2021-05-26)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_4" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_3" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_5" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#480-2021-05-21" class="md-nav__link">
+    4.8.0 (2021-05-21)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.8.0 (2021-05-21)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_6" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_4" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#470-2021-05-07" class="md-nav__link">
+    4.7.0 (2021-05-07)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7.0 (2021-05-07)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_7" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_5" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#460-2021-04-27" class="md-nav__link">
+    4.6.0 (2021-04-27)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6.0 (2021-04-27)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_6" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452-2021-04-22" class="md-nav__link">
+    4.5.2 (2021-04-22)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_1" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_8" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#451-2021-04-20" class="md-nav__link">
+    4.5.1 (2021-04-20)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_2" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#450-2021-04-20" class="md-nav__link">
+    4.5.0 (2021-04-20)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5.0 (2021-04-20)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_3" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_7" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-2021-04-14" class="md-nav__link">
+    4.4.3 (2021-04-14)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_4" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-2021-04-12" class="md-nav__link">
+    4.4.2 (2021-04-12)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_9" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#441-2021-04-08" class="md-nav__link">
+    4.4.1 (2021-04-08)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_10" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#440-2021-03-23" class="md-nav__link">
+    4.4.0 (2021-03-23)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4.0 (2021-03-23)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_5" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_11" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_8" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#431-2021-03-03" class="md-nav__link">
+    4.3.1 (2021-03-03)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_6" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#430-2021-03-02" class="md-nav__link">
+    4.3.0 (2021-03-02)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3.0 (2021-03-02)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_7" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_9" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_12" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#421-2021-02-24" class="md-nav__link">
+    4.2.1 (2021-02-24)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_8" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#420-2021-02-22" class="md-nav__link">
+    4.2.0 (2021-02-22)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2.0 (2021-02-22)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_10" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#410-2021-02-12" class="md-nav__link">
+    4.1.0 (2021-02-12)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1.0 (2021-02-12)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation_5" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_13" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_11" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#400-2021-01-28" class="md-nav__link">
+    4.0.0 (2021-01-28)
+  </a>
+  
+    <nav class="md-nav" aria-label="4.0.0 (2021-01-28)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_1" class="md-nav__link">
+    ⚠ BREAKING CHANGES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_9" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_14" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_12" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#refactor" class="md-nav__link">
+    refactor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#300-2020-12-18" class="md-nav__link">
+    3.0.0 (2020-12-18)
+  </a>
+  
+    <nav class="md-nav" aria-label="3.0.0 (2020-12-18)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breaking-changes_2" class="md-nav__link">
+    ⚠ BREAKING CHANGES
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes_10" class="md-nav__link">
+    Bug Fixes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation_6" class="md-nav__link">
+    Documentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhancements_13" class="md-nav__link">
+    Enhancements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance_15" class="md-nav__link">
+    Maintenance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/dasch-swiss/dsp-app/blob/main/docs/contribution/release-notes.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <!-- BEGIN INCLUDE ../../CHANGELOG.md   -->
+<h1 id="changelog">Changelog</h1>
+<h2 id="500-2021-07-05"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.11.1...v5.0.0">5.0.0</a> (2021-07-05)</h2>
+<h3 id="breaking-changes">⚠ BREAKING CHANGES</h3>
+<ul>
+<li><strong>upload:</strong> add upload form for still images (DSP-1761) (#472)</li>
+<li><strong>config:</strong> add geoname config (DSP-1672) (#473)</li>
+</ul>
+<h3 id="documentation">Documentation</h3>
+<ul>
+<li><strong>ontology:</strong> update docs and show hint in ontology-form (DSP-1139) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/476">#476</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/927237ddc5d36ea5ff6f59a48465890d607ba8c0">927237d</a>)</li>
+</ul>
+<h3 id="enhancements">Enhancements</h3>
+<ul>
+<li><strong>config:</strong> add geoname config (DSP-1672) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/473">#473</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/d4222bacb3e8d85ecaf23eb9881e81c183f96681">d4222ba</a>)</li>
+<li><strong>ontology:</strong> add property to res class that is in use (DSP-1631) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/477">#477</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/b18e6ecba2afb3059ef75fb20c3d5699468e8335">b18e6ec</a>)</li>
+<li><strong>ontology:</strong> change gui element for text value properties (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/478">#478</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/6af1f7e74dd9199bda236a5d088a59a17b2dc5d8">6af1f7e</a>)</li>
+<li><strong>ontology:</strong> display description for default and existing props (DSP-1154) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/475">#475</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/8be7e5514f548b2f7be8cd53dbc2ca749ccda9c5">8be7e55</a>)</li>
+<li><strong>upload:</strong> add upload form for still images (DSP-1761) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/472">#472</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/2f314a281cd257671c6c789d90e31936c87da01f">2f314a2</a>)</li>
+</ul>
+<h3 id="maintenance">Maintenance</h3>
+<ul>
+<li><strong>deps:</strong> bump jdnconvertiblecalendar to v0.0.7 (DSP-1770) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/479">#479</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/b2ec64a7193159237009db30baccff51d540405f">b2ec64a</a>)</li>
+</ul>
+<h3 id="4111-2021-06-23"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.11.0...v4.11.1">4.11.1</a> (2021-06-23)</h3>
+<h3 id="documentation_1">Documentation</h3>
+<ul>
+<li><strong>search:</strong> add advanced search user guide (DSP-1662) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/470">#470</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/30edc96a3568ee45424b557ad2a6eea6381e486a">30edc96</a>)</li>
+<li><strong>user-guide:</strong> fix navigation links (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/468">#468</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/49c68f803b646761a38deb00cd29681e40cf7d62">49c68f8</a>)</li>
+</ul>
+<h3 id="maintenance_1">Maintenance</h3>
+<ul>
+<li>fix dead links to the documentation (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/471">#471</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/d7ae0223b75fc21ab9b976ea831adbd86ec32a5c">d7ae022</a>)</li>
+</ul>
+<h2 id="4110-2021-06-22"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.10.1...v4.11.0">4.11.0</a> (2021-06-22)</h2>
+<h3 id="enhancements_1">Enhancements</h3>
+<ul>
+<li><strong>ontology:</strong> check if an ontology, a class or a property can be deleted (DSP-1750) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/457">#457</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/fb0c275c224a58823ab00a76460c83c024ef735b">fb0c275</a>)</li>
+</ul>
+<h3 id="maintenance_2">Maintenance</h3>
+<ul>
+<li>empty landing page instead login (DSP-1756) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/466">#466</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/32cd4622624799ae4884f5cede342629b2ab5719">32cd462</a>)</li>
+<li><strong>gh-ci:</strong> update docs deployment (DSP-1741) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/463">#463</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/6415152debca4ed218c917ab0243d100e31d0708">6415152</a>)</li>
+</ul>
+<h3 id="documentation_2">Documentation</h3>
+<ul>
+<li>refactor documentation and set correct links (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/467">#467</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/cbeb274f5cf871df2362003f30a5a3bf474ec81b">cbeb274</a>)</li>
+</ul>
+<h3 id="4101-2021-06-15"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.10.0...v4.10.1">4.10.1</a> (2021-06-15)</h3>
+<h3 id="documentation_3">Documentation</h3>
+<ul>
+<li>fix dead links and replace screenshots in project (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/460">#460</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/a13b8bafaf3771a406d5d3264c70bebb917baedc">a13b8ba</a>)</li>
+<li>prepare documentation for docs.dasch.swiss (DSP-1721) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/458">#458</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/09259f1ad5badc1bd0eb910776417f07fdc62c68">09259f1</a>)</li>
+</ul>
+<h3 id="maintenance_3">Maintenance</h3>
+<ul>
+<li><strong>analytics:</strong> add fathom (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/462">#462</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/f1e0244289f58810dbdd269aa73fb00c15a012ea">f1e0244</a>)</li>
+<li><strong>cookie-policy:</strong> reactivate the cookie policy banner (DSP-1727) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/461">#461</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/ac99fbc74c0322eaa50a6bb510124714c72aa070">ac99fbc</a>)</li>
+</ul>
+<h2 id="4100-2021-06-07"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.9.1...v4.10.0">4.10.0</a> (2021-06-07)</h2>
+<h3 id="enhancements_2">Enhancements</h3>
+<ul>
+<li><strong>ontology:</strong> new cardinality workflow (DSP-1652) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/455">#455</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/f1d049cce629ce212a80b00c857a1b9778977f4f">f1d049c</a>)</li>
+</ul>
+<h3 id="491-2021-05-26"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.9.0...v4.9.1">4.9.1</a> (2021-05-26)</h3>
+<h3 id="maintenance_4">Maintenance</h3>
+<ul>
+<li><strong>resource:</strong> improve list of properties in resource viewer (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/453">#453</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/49d9b7f2c1689c7fa7f572e09b47516253c05b60">49d9b7f</a>)</li>
+</ul>
+<h2 id="490-2021-05-26"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.8.0...v4.9.0">4.9.0</a> (2021-05-26)</h2>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>disable progress bar if search results are empty (DSP-1575) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/442">#442</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/8c67d6007f5d268bac337c6e9702a39ca01704ad">8c67d60</a>)</li>
+<li><strong>resource:</strong> add if condition (DSP-1655) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/448">#448</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/656da04effaedb8cb62c8cd6ad31081a4763adc0">656da04</a>)</li>
+</ul>
+<h3 id="documentation_4">Documentation</h3>
+<ul>
+<li>update documentation about contribution (DSP-1657) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/449">#449</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/c25280db676b7d5e9fd59583b1151b846f64ce8e">c25280d</a>)</li>
+</ul>
+<h3 id="enhancements_3">Enhancements</h3>
+<ul>
+<li><strong>resource:</strong> display region annotations in still images (DSP-1585) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/445">#445</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/86e75b9fc540dde01590257d786fb65ee7af2c9c">86e75b9</a>)</li>
+<li><strong>search:</strong> specify linked resource in advanced search (DSP-1661) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/451">#451</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/3f0d6d9a29a9ec299bf38cfa7782ef2eaec151bb">3f0d6d9</a>)</li>
+</ul>
+<h3 id="maintenance_5">Maintenance</h3>
+<ul>
+<li><strong>deps:</strong> update packages to resolve security issues (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/450">#450</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/8e927f777c9c9801ab724d4750f6fccd2bcd97d0">8e927f7</a>)</li>
+<li><strong>project:</strong> resolve regex term (DSP-1654) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/444">#444</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/739bebab58e6a89cb79a8d85cf1d3d5f514f23f0">739beba</a>)</li>
+</ul>
+<h2 id="480-2021-05-21"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.7.0...v4.8.0">4.8.0</a> (2021-05-21)</h2>
+<h3 id="maintenance_6">Maintenance</h3>
+<ul>
+<li><strong>CD/CI:</strong> automatically detect common vulnerabilities and coding errors (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/438">#438</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/af023322f1fd03c2659c7127adcd856ac9e6f25d">af02332</a>)</li>
+<li><strong>compiler:</strong> enable strict template (DSP-1403) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/432">#432</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/583a338d99fa8dca74c07182d0471219c382f9d1">583a338</a>)</li>
+<li><strong>environment:</strong> add test-server config (DSP-1650) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/443">#443</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/a56a45ba84f3f62e7b5b1d32fc42954099827280">a56a45b</a>)</li>
+<li>Replace favicon and term Knora by DSP (DSP-1181 / DSP-1342) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/441">#441</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/3b038b688f8db9da86aa74c2811d93250541d860">3b038b6</a>)</li>
+</ul>
+<h3 id="enhancements_4">Enhancements</h3>
+<ul>
+<li><strong>ontology:</strong> new method to change gui order (DSP-1567/DSP-1646) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/440">#440</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/dfd0ce094fbfb047a16d86c59e4edc6f005281d2">dfd0ce0</a>)</li>
+</ul>
+<h2 id="470-2021-05-07"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.6.0...v4.7.0">4.7.0</a> (2021-05-07)</h2>
+<h3 id="maintenance_7">Maintenance</h3>
+<ul>
+<li><strong>search results:</strong> disable grid view (DSP-1597) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/435">#435</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/c4726fe08db97a907a2b98dc38d3287323ffa55e">c4726fe</a>)</li>
+</ul>
+<h3 id="enhancements_5">Enhancements</h3>
+<ul>
+<li><strong>DMP:</strong> own resource viewer (DSP-1586) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/434">#434</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/35bd7b342424e1db6d6c788cf3dff0c4c4e5d446">35bd7b3</a>)</li>
+</ul>
+<h2 id="460-2021-04-27"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.5.2...v4.6.0">4.6.0</a> (2021-04-27)</h2>
+<h3 id="enhancements_6">Enhancements</h3>
+<ul>
+<li><strong>DMP:</strong> bring back the workspace (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/431">#431</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/e8b1c8e97c244152b7e7df172c2e9932ee4991ae">e8b1c8e</a>)</li>
+</ul>
+<h3 id="452-2021-04-22"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.5.1...v4.5.2">4.5.2</a> (2021-04-22)</h3>
+<h3 id="bug-fixes_1">Bug Fixes</h3>
+<ul>
+<li><strong>list:</strong> list no longer displays after deletion if it was the only list among lists (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/429">#429</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/b05484ee2407ce52e2bc61f18907e5c21ff3e94c">b05484e</a>)</li>
+<li><strong>project:</strong> bug fix in project member management (DSP-1563) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/425">#425</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/ac820dd54637430b4bdbcebfbfa8ccdf9f4dea22">ac820dd</a>)</li>
+</ul>
+<h3 id="maintenance_8">Maintenance</h3>
+<ul>
+<li><strong>ontology:</strong> disable ontology graph view (DSP-1560) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/427">#427</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/0a567d2cfdba6a9824fe6707b3c1130877fc13d7">0a567d2</a>)</li>
+<li><strong>ontology:</strong> disable rti image class (DSP-1559) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/430">#430</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/48c3c761d146d78f349b6ed711cffeeea6e354bb">48c3c76</a>)</li>
+<li><strong>ontology:</strong> rename boolean prop type (DSP-1561) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/426">#426</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/4dd23d3027af7e32b5df57d84bd8df0d8c20832c">4dd23d3</a>)</li>
+</ul>
+<h3 id="451-2021-04-20"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.5.0...v4.5.1">4.5.1</a> (2021-04-20)</h3>
+<h3 id="bug-fixes_2">Bug Fixes</h3>
+<ul>
+<li><strong>ontology:</strong> bug fix in create ontology process (DSP-1558) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/423">#423</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/bbd825b659aa695b6b1ba9d58fe5a09b91071a8b">bbd825b</a>)</li>
+</ul>
+<h2 id="450-2021-04-20"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.4.3...v4.5.0">4.5.0</a> (2021-04-20)</h2>
+<h3 id="bug-fixes_3">Bug Fixes</h3>
+<ul>
+<li><strong>users:</strong> update session the correct way (DSP-690) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/419">#419</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/3ec049e76df1c66a80026f0cb1d83bfea5178319">3ec049e</a>)</li>
+</ul>
+<h3 id="enhancements_7">Enhancements</h3>
+<ul>
+<li><strong>project:</strong> better error handler in case a project does not exist (DSP-1401) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/421">#421</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/d7470a0807688ef19209f43185d6bebbe890f991">d7470a0</a>)</li>
+</ul>
+<h3 id="443-2021-04-14"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.4.2...v4.4.3">4.4.3</a> (2021-04-14)</h3>
+<h3 id="bug-fixes_4">Bug Fixes</h3>
+<ul>
+<li><strong>ontology:</strong> Bug fix in ontology form (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/417">#417</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/96dc8042a6dc07c50f55c2992b48f196adf0f093">96dc804</a>)</li>
+</ul>
+<h3 id="442-2021-04-12"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.4.1...v4.4.2">4.4.2</a> (2021-04-12)</h3>
+<h3 id="maintenance_9">Maintenance</h3>
+<ul>
+<li><strong>migrate to angular11:</strong> changes (DSP-1471) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/415">#415</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/3271ece225148d23512dc00c7f3b88ee2ff23385">3271ece</a>)</li>
+</ul>
+<h3 id="441-2021-04-08"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.4.0...v4.4.1">4.4.1</a> (2021-04-08)</h3>
+<h3 id="maintenance_10">Maintenance</h3>
+<ul>
+<li><strong>migrate to angular10:</strong> changes (DSP-1415) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/412">#412</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/cec564d9eb00c1e11d7fb93b3c8e94a56dc33c39">cec564d</a>)</li>
+</ul>
+<h2 id="440-2021-03-23"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.3.1...v4.4.0">4.4.0</a> (2021-03-23)</h2>
+<h3 id="bug-fixes_5">Bug Fixes</h3>
+<ul>
+<li><strong>deps:</strong> package dependency build errors (DSP-1400) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/410">#410</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/17e0e1ab2beefc0a9a6ca5bce0cc77c9c4196db4">17e0e1a</a>)</li>
+</ul>
+<h3 id="maintenance_11">Maintenance</h3>
+<ul>
+<li><strong>list-editor:</strong> new list form refactor (DSP-1392) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/403">#403</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/88246828c2e0868a058ce10f3b8e80f7802ff06d">8824682</a>)</li>
+<li><strong>ontology:</strong> improve ontology editor design (DSP-1376) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/401">#401</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/6de83b801b0414311112e13e90298308c6c6df79">6de83b8</a>)</li>
+<li><strong>project landing page:</strong> update metadata typings (DSP-1393) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/407">#407</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/b4f101b0425f12919cfa071903fc788ea44aa561">b4f101b</a>)</li>
+<li><strong>project metadata page:</strong> enable error handler (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/411">#411</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/a4004eddbb22dc92a7b81c32214c0a3956fbe6ca">a4004ed</a>)</li>
+</ul>
+<h3 id="enhancements_8">Enhancements</h3>
+<ul>
+<li><strong>eslint:</strong> migrate tslint to eslint (DSP-1372) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/394">#394</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/6ffc3b6b8803ddf0e47a1f921ff85b7881f027d2">6ffc3b6</a>)</li>
+<li><strong>ontology:</strong> edit data model info (DSP-1208) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/385">#385</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/86a5fb819146707d8b44d5f027f2fccfb4b00791">86a5fb8</a>)</li>
+<li><strong>ontology:</strong> form to create and edit property (DSP-1210) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/406">#406</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/91ebb6845838f7370b320b805877c829904ded0e">91ebb68</a>)</li>
+</ul>
+<h3 id="431-2021-03-03"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.3.0...v4.3.1">4.3.1</a> (2021-03-03)</h3>
+<h3 id="bug-fixes_6">Bug Fixes</h3>
+<ul>
+<li><strong>project:</strong> disable error handler in metadata request (DSP-1395) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/404">#404</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/86ebfcf6a6d62e7ddc0e45899726d24f0b1a0c4a">86ebfcf</a>)</li>
+</ul>
+<h2 id="430-2021-03-02"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.2.1...v4.3.0">4.3.0</a> (2021-03-02)</h2>
+<h3 id="bug-fixes_7">Bug Fixes</h3>
+<ul>
+<li><strong>ontology:</strong> set the cache earlier in case of only one ontology (DSP-1374) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/397">#397</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/c23ae6101bb307273cf3a267248eb4ac4976b4c2">c23ae61</a>)</li>
+</ul>
+<h3 id="enhancements_9">Enhancements</h3>
+<ul>
+<li><strong>list-editor:</strong> insert a child node at a specific position (DSP-1301) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/395">#395</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5107200dc769d5690f5356bb467f05143a05abd1">5107200</a>)</li>
+<li><strong>ontology:</strong> separate list of ontology properties (DSP-1364) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/391">#391</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/0f94df6a32554c58e02ed863458724a6d4e0bb8c">0f94df6</a>)</li>
+</ul>
+<h3 id="maintenance_12">Maintenance</h3>
+<ul>
+<li><strong>deps:</strong> bump three from 0.118.3 to 0.125.0 (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/402">#402</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5ab9c4904c609e77ff208adaced55ddd8f569270">5ab9c49</a>)</li>
+<li><strong>gh-ci:</strong> update release please configuration (DSP-1381) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/399">#399</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/040df19bad31cc4cbdf13f8253e8bde23bdf144c">040df19</a>)</li>
+<li><strong>project landing page:</strong> use metadata endpoint to get data from backend (DSP-1199) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/400">#400</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5dde42f2d5a1e2e47d5f60bc734d74200c425dea">5dde42f</a>)</li>
+<li><strong>tests:</strong> script to find ignored tests (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/396">#396</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/9ca249d35de895cd96d9bc08a82f3957f6945e8e">9ca249d</a>)</li>
+</ul>
+<h3 id="421-2021-02-24"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.2.0...v4.2.1">4.2.1</a> (2021-02-24)</h3>
+<h3 id="bug-fixes_8">Bug Fixes</h3>
+<ul>
+<li><strong>ontology:</strong> bug fix in list property (DSP-1368) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/390">#390</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/2fb448e5ae7d0a96d6e1edbd42717ea837371c20">2fb448e</a>)</li>
+</ul>
+<h2 id="420-2021-02-22"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.1.0...v4.2.0">4.2.0</a> (2021-02-22)</h2>
+<h3 id="enhancements_10">Enhancements</h3>
+<ul>
+<li><strong>list-editor:</strong> add deletion functionality (DSP-1334) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/378">#378</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/34c74a6474aead06f0ee822488df7d4a702385e8">34c74a6</a>)</li>
+<li><strong>list-editor:</strong> delete list root node (DSP-1356) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/386">#386</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5d5eabf2521bd71a2b3055fc1f8b5b0c6ff043a5">5d5eabf</a>)</li>
+<li><strong>list-editor:</strong> reposition a child node amongst its siblings (DSP-1340) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/388">#388</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/0a9be0ea8f73dfe72bf34bdc86c941bf7ac93c41">0a9be0e</a>)</li>
+<li><strong>ontology:</strong> default language for property label (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/382">#382</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/97230d1a3bba0ff27dc33674a47cfba126e19434">97230d1</a>)</li>
+<li><strong>ontology:</strong> edit res class info (DSP-1209) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/380">#380</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/2debd036db2da4e224625ddb793133fb0fde5668">2debd03</a>)</li>
+<li><strong>ontology:</strong> refactor list of properties in resource class (DSP-1360) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/389">#389</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/aa565b3f5265cc0416e05282db400bfe9194836e">aa565b3</a>)</li>
+</ul>
+<h2 id="410-2021-02-12"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v4.0.0...v4.1.0">4.1.0</a> (2021-02-12)</h2>
+<h3 id="documentation_5">Documentation</h3>
+<ul>
+<li>init mkdocs and move documentation from DSP-DOCS into DSP-APP repo (DSP-380) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/379">#379</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/07f50678c75d1da4cfc2c4792917b13840b5eaf6">07f5067</a>)</li>
+</ul>
+<h3 id="maintenance_13">Maintenance</h3>
+<ul>
+<li>bumps DSP-JS to 1.3.0 and DSP-UI to 1.2.1 (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/374">#374</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/7b795ee56026fa3a9e2f44e9c43a4d3502b5d764">7b795ee</a>)</li>
+<li><strong>deps:</strong> bump socket.io from 2.3.0 to 2.4.1 (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/367">#367</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/8133d876bb4f606293604a4a63111fddd8993e1a">8133d87</a>)</li>
+</ul>
+<h3 id="enhancements_11">Enhancements</h3>
+<ul>
+<li><strong>list editor:</strong> Adds support for editing lists (DSP-741) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/365">#365</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5b6ee4be19b1b900fcb58a789d1e2cff44cb79e6">5b6ee4b</a>)</li>
+<li><strong>ontology:</strong> update cardinality in resource class (DSP-1266) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/377">#377</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5a766c1db06d862b2edfba49347a659f4233d1c2">5a766c1</a>)</li>
+</ul>
+<h2 id="400-2021-01-28"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v3.0.0...v4.0.0">4.0.0</a> (2021-01-28)</h2>
+<h3 id="breaking-changes_1">⚠ BREAKING CHANGES</h3>
+<ul>
+<li>set up the login page as a starting page (DSP-1292) (#370)</li>
+<li><strong>app+main:</strong> comment out the search and everything related to resources (DSP-1291) (#371)</li>
+</ul>
+<h3 id="bug-fixes_9">Bug Fixes</h3>
+<ul>
+<li><strong>dialog:</strong> Diaolog box height issue fixed (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/358">#358</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/15d11820ef7a3b063f2f706d9bfce7e51c9ea514">15d1182</a>)</li>
+<li><strong>routing:</strong> bring back the route handler in main component (DSP-1303) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/373">#373</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/8492c1acd23da73ed143e160388eb0080ff60b17">8492c1a</a>)</li>
+</ul>
+<h3 id="maintenance_14">Maintenance</h3>
+<ul>
+<li>update pr template (DSP-1189) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/353">#353</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/f348e70c4fa4dc0aeb2573aba4e1aa62fc1725a6">f348e70</a>)</li>
+<li>update the dsp-ui and dsp-js versions to the latest (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/364">#364</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/66931f088d4a9ad07da219c4a6e8e81d39f4596e">66931f0</a>)</li>
+</ul>
+<h3 id="enhancements_12">Enhancements</h3>
+<ul>
+<li>display metadata on project landing page (DSP-1065) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/348">#348</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/3012ef5e767dea3a16c7ae380bf3f1a4b3385c9e">3012ef5</a>)</li>
+<li><strong>error:</strong> Server error handler (DSP-710) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/355">#355</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/d5b77bf89470d5bb63b7850ce1b98dbc02d87223">d5b77bf</a>)</li>
+<li><strong>new-resource-form:</strong> make visible the required prop fields (DSP-1115) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/342">#342</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5885b041c2c7c223277a50ccc0495872b1d099fe">5885b04</a>)</li>
+<li><strong>project landing page:</strong> add copy to clipboard functionality (DSP-1248) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/368">#368</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/17bf71c4502074264070bd513301139c43976a58">17bf71c</a>)</li>
+<li><strong>select-resource-class:</strong> allow accented character (DSP-1241) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/363">#363</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/8a2654b75f3194292b2fada9239c29ffa44fe8db">8a2654b</a>)</li>
+</ul>
+<h3 id="refactor">refactor</h3>
+<ul>
+<li><strong>app+main:</strong> comment out the search and everything related to resources (DSP-1291) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/371">#371</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/50b13091e6437a68ea2a45bb7b50a4e655f5d85d">50b1309</a>)</li>
+<li>set up the login page as a starting page (DSP-1292) (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/370">#370</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/46dfdbba13adff1dc40eb5bb8422a3093b1e8b74">46dfdbb</a>)</li>
+</ul>
+<h2 id="300-2020-12-18"><a href="https://www.github.com/dasch-swiss/dsp-app/compare/v2.0.1...v3.0.0">3.0.0</a> (2020-12-18)</h2>
+<h3 id="breaking-changes_2">⚠ BREAKING CHANGES</h3>
+<ul>
+<li>Prepare next big release (#350)</li>
+</ul>
+<h3 id="bug-fixes_10">Bug Fixes</h3>
+<ul>
+<li><strong>header:</strong> Replace search-panel with fulltext-search (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/313">#313</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/d234fa7be480f0769474c39ae39169d2ad3d4c4f">d234fa7</a>)</li>
+<li><strong>node_modules:</strong> Update dependencies (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/318">#318</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/f85e4a2a0c727c7b44f5659b05d11d139fb26236">f85e4a2</a>)</li>
+<li><strong>project:</strong> Bug fix in project view when not logged-in (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/339">#339</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/ce5acf11b28309674e75fdaf15ead60dbb4bcc96">ce5acf1</a>)</li>
+<li><strong>workspace:</strong> Fix broken link (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/306">#306</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/52b324db05a6fb62675e43733b1f5bc19f99f29f">52b324d</a>)</li>
+<li>Open external link in new tab (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/297">#297</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/99f188ece067d509e6f177e259bbb97b2d49983a">99f188e</a>)</li>
+<li>Replaced reset buttons with cancel button (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/284">#284</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/14810180c63cf3a44f1f3950105ffb87db335c02">1481018</a>)</li>
+<li>Update docker environment (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/294">#294</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/db6d277cdf5bbb5372a63e64eeb7b53684338eff">db6d277</a>)</li>
+</ul>
+<h3 id="documentation_6">Documentation</h3>
+<ul>
+<li>Update README (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/292">#292</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/fa72ee1efc3da54c7f04f23ddd6c7513a607cc53">fa72ee1</a>)</li>
+</ul>
+<h3 id="enhancements_13">Enhancements</h3>
+<ul>
+<li>Prepare next big release (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/350">#350</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/6a391800c09684ae79b9a88dc31a6f1f75c54716">6a39180</a>)</li>
+<li><strong>header:</strong> display form link when the session is active (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/332">#332</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/d609bd506e08fe86a84af74b6c7fcaf7362fde84">d609bd5</a>)</li>
+<li><strong>header+dialog:</strong> create button in the header + dialog box (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/320">#320</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5e4890d55f1b2e8d9cff030ea2481344ac004e6f">5e4890d</a>)</li>
+<li><strong>PR:</strong> Add template for PRs (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/305">#305</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/1468ee1daec724ece8c84e96b3a53854577a16d9">1468ee1</a>)</li>
+</ul>
+<h3 id="maintenance_15">Maintenance</h3>
+<ul>
+<li><strong>ci:</strong> Update package-name in gh actions workflow (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/352">#352</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/3d9bb13b6a0fd8ab9a57d1e11e6ce77be7ae2433">3d9bb13</a>)</li>
+<li>Update js- and ui-lib version (<a href="https://www.github.com/dasch-swiss/dsp-app/issues/293">#293</a>) (<a href="https://www.github.com/dasch-swiss/dsp-app/commit/5409d9bdb2f72b2f269ba0a7ba039d3cbcae472b">5409d9b</a>)</li>
+</ul>
+<!-- END INCLUDE -->
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2021-07-05
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../docs-documentation/" title="Docs Documentation" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Docs Documentation
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2017 - 2021 <a href='https://dasch.swiss' target='_blank'>Data and Service Center for the Humanities (DaSCH)</a>
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.tabs', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

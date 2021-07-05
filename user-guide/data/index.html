@@ -1,0 +1,1066 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/icons/dasch-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>Data Management - DSP-APP</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../assets/style/theme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-management" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="DSP-APP" class="md-header-nav__button md-logo" aria-label="DSP-APP">
+      
+  <img src="../../assets/icons/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DSP-APP
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Data Management
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/dasch-swiss/dsp-app/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dasch-swiss/dsp-app
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" class="md-tabs__link md-tabs__link--active">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../contribution/" class="md-tabs__link">
+          Contribution
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DSP-APP" class="md-nav__button md-logo" aria-label="DSP-APP">
+      
+  <img src="../../assets/icons/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    DSP-APP
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/dasch-swiss/dsp-app/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dasch-swiss/dsp-app
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../project/" title="Project Administration" class="md-nav__link">
+      Project Administration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../system/" title="System Administration" class="md-nav__link">
+      System Administration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Management
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Data Management" class="md-nav__link md-nav__link--active">
+      Data Management
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-from-scratch" class="md-nav__link">
+    Start from scratch
+  </a>
+  
+    <nav class="md-nav" aria-label="Start from scratch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organize-data-and-create-additional-sources" class="md-nav__link">
+    Organize data and create additional sources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-and-browse" class="md-nav__link">
+    Search and browse
+  </a>
+  
+    <nav class="md-nav" aria-label="Search and browse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-text-search" class="md-nav__link">
+    Full text search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-search" class="md-nav__link">
+    Advanced search
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced search">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    Comparison Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-examples" class="md-nav__link">
+    Search Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regular-expressions-is-like" class="md-nav__link">
+    Regular Expressions (is like)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lucene-parser-syntax-matches" class="md-nav__link">
+    Lucene Parser Syntax (matches)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-a-linked-resource-matches" class="md-nav__link">
+    Specifying a Linked Resource (matches)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-search" class="md-nav__link">
+    Expert search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-results" class="md-nav__link">
+    Search results
+  </a>
+  
+    <nav class="md-nav" aria-label="Search results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-list" class="md-nav__link">
+    Simple list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-list-lighttable" class="md-nav__link">
+    Grid list: Lighttable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-excel-like-view" class="md-nav__link">
+    Table: Excel-like view
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-research-and-work-on-your-data" class="md-nav__link">
+    Do research and work on your data
+  </a>
+  
+    <nav class="md-nav" aria-label="Do research and work on your data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-a-source" class="md-nav__link">
+    Display a source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-more-than-one-source" class="md-nav__link">
+    Select more than one source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare-the-sources" class="md-nav__link">
+    Compare the sources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annotate-and-connect-your-data-sources-andor-metadata" class="md-nav__link">
+    Annotate and connect your data (sources and/or metadata)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-save-or-share-the-data" class="md-nav__link">
+    Export, save or share the data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user/" title="User Profile" class="md-nav__link">
+      User Profile
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Contribution
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contribution" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contribution/" title="How to contribute" class="md-nav__link">
+      How to contribute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contribution/docs-documentation/" title="Docs Documentation" class="md-nav__link">
+      Docs Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contribution/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#start-from-scratch" class="md-nav__link">
+    Start from scratch
+  </a>
+  
+    <nav class="md-nav" aria-label="Start from scratch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organize-data-and-create-additional-sources" class="md-nav__link">
+    Organize data and create additional sources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-and-browse" class="md-nav__link">
+    Search and browse
+  </a>
+  
+    <nav class="md-nav" aria-label="Search and browse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-text-search" class="md-nav__link">
+    Full text search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-search" class="md-nav__link">
+    Advanced search
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced search">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    Comparison Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-examples" class="md-nav__link">
+    Search Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Search Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regular-expressions-is-like" class="md-nav__link">
+    Regular Expressions (is like)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lucene-parser-syntax-matches" class="md-nav__link">
+    Lucene Parser Syntax (matches)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-a-linked-resource-matches" class="md-nav__link">
+    Specifying a Linked Resource (matches)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-search" class="md-nav__link">
+    Expert search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search-results" class="md-nav__link">
+    Search results
+  </a>
+  
+    <nav class="md-nav" aria-label="Search results">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-list" class="md-nav__link">
+    Simple list
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-list-lighttable" class="md-nav__link">
+    Grid list: Lighttable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#table-excel-like-view" class="md-nav__link">
+    Table: Excel-like view
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#do-research-and-work-on-your-data" class="md-nav__link">
+    Do research and work on your data
+  </a>
+  
+    <nav class="md-nav" aria-label="Do research and work on your data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-a-source" class="md-nav__link">
+    Display a source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-more-than-one-source" class="md-nav__link">
+    Select more than one source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compare-the-sources" class="md-nav__link">
+    Compare the sources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annotate-and-connect-your-data-sources-andor-metadata" class="md-nav__link">
+    Annotate and connect your data (sources and/or metadata)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-save-or-share-the-data" class="md-nav__link">
+    Export, save or share the data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/dasch-swiss/dsp-app/blob/main/docs/user-guide/data.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="data-management">Data management</h1>
+<p>Once your <a href="/user-guide/project/#data-model">data model</a> is ready, you're able to add data. The DSP-APP offers several possibilities to add data, whether you are starting from scratch or importing data from another program.</p>
+<h2 id="start-from-scratch">Start from scratch</h2>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em> (only mockups are presented)</p>
+<p>When a project starts from scratch, you will enter and generate new data directly in the DSP-APP itself. Generating new data can be done one by one with a form or with a table-based (Excel like) tool.</p>
+<ul>
+<li>Upload the files, e.g., the actual audio file of an interview or images of the photographs discussed in the interview</li>
+<li>Augment the metadata</li>
+<li>In case of interview transcriptions from audio or video files, DSP-APP will offer a simple transcription tool</li>
+</ul>
+<p><img alt="Create new source e.g. upload audio file of an interview." src="../../assets/images/mock-source-new-edit.png" /><em>Create new source; e.g. upload audio file of an interview.</em></p>
+<hr />
+<h3 id="organize-data-and-create-additional-sources">Organize data and create additional sources</h3>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em></p>
+<p>The workspace of the DSP-APP includes tools to connect different sources, even if they're not in the same project (linkage), to comment on a source and on their metadata fields (annotate), and to transcribe audio-visual material. These actions will generate more data and will help to find specific sources and their relations easily.
+It's possible to collect different sources and to store them in an individual collection. You can define more than one collection. You can share collections and invite other users to collaborate.</p>
+<hr />
+<h2 id="search-and-browse">Search and browse</h2>
+<p>DSP-APP offers the possibility to the user to search in 3 different ways: <strong>full text</strong> search, <strong>advanced</strong> search and <strong>expert</strong> search (Gravsearch query). The search bar is always available in the header of each page, whether logged in or out.</p>
+<p><img alt="Search bar with the 3 search modes: full text, advanced and expert" src="../../assets/images/search-3modes.png" /></p>
+<h3 id="full-text-search">Full text search</h3>
+<p>Full text search performs queries including one or more terms or phrases, and returns data that matches search conditions. By default, the search is performed in all projects stored in DSP. However, it is possible to filter by project using the menu "Filter by project" on the left side of the search bar.</p>
+<p><img alt="Filter your full text search by specific project" src="../../assets/images/search-fulltext-filterByProject.png" /><em><a href="https://admin.dasch.swiss">https://admin.dasch.swiss</a> - Search 1: Full text search</em></p>
+<p>When clicking on the search bar, the search history panel is displayed. The <strong>10</strong> last searches are registered. It is also possible to clear the search history list (<em>Clear list</em> button at the bottom of the panel).</p>
+<p><img alt="Search history panel" src="../../assets/images/search-history.png" /><em>Search history list is accessible for the full text search from any webpage.</em></p>
+<p>Special syntax:</p>
+<ul>
+<li>asterisk* can be used as a wildcard symbol</li>
+<li>"quotation marks" searches for the whole pattern </li>
+</ul>
+<hr />
+<h3 id="advanced-search">Advanced search</h3>
+<p><img alt="Advanced search link is findable in the search menu at the right of the full text search field." src="../../assets/images/search-advanced-link.png" /></p>
+<p>The advanced search allows for the creation of complex queries using a graphical widget.
+The widget's contents are then turned into a string representing a Gravsearch (SPARQL) query to be sent to DSP-API.</p>
+<p>A query consists of the following elements:
+- data model selection
+- selection of a resource class belonging to the selected data model (optional)
+- specification of properties, comparison operators, and values (optional).</p>
+<p>Although selection of a resource or a property or both are optional, either a resource class has to be selected or at least one property has to be specified,
+otherwise the query is not considered valid and cannot be submitted.</p>
+<p><img alt="Search 2: Advanced search offers many filter combinations and is a powerful search tool." src="../../assets/images/search-advanced.png" /><em><a href="https://admin.dasch.swiss/search/advanced">https://admin.dasch.swiss/search/advanced</a> - Search 2: Advanced search offers many filter combinations and is a powerful search tool.</em></p>
+<h4 id="comparison-operators">Comparison Operators</h4>
+<p>Depending on the value type of the chosen property,
+one or more of the following comparison operators can be selected:</p>
+<ul>
+<li><code>is equal to</code>: value equality: same number, exact same string, overlap of date periods, same target resource.</li>
+<li><code>is not equal to</code>: value inequality: not same number, not exact same string, no overlap of date periods, not same target resource.</li>
+<li><code>is greater than</code>: value comparison: number is greater than search value, date period begins after search value.</li>
+<li><code>is greater than or equal to</code> value equality / value comparison: number is equal to or greater than search value, overlap of date periods or date period begins after search value.</li>
+<li><code>is less than</code>: value comparison: number is less than search value, date period ends before search value.</li>
+<li><code>is less than or equal to</code>: value equality / value comparison: number is equal to or less than search value, overlap of date periods or date period ends before search value.</li>
+<li><code>exists</code>: value for the given property exists.</li>
+<li><code>is like</code>: search value is contained in a text using the SPARQL <a href="https://www.w3.org/TR/sparql11-query/#func-regex">REGEX</a> function (supports regular expressions).</li>
+<li><code>matches</code>:</li>
+<li>text property: search value matches the text (<a href="https://docs-api.dasch.swiss/08-lucene/lucene-query-parser-syntax/">Lucene Query Parser Syntax</a>).</li>
+<li>linking property: matches the specified linked resource.</li>
+</ul>
+<h4 id="search-examples">Search Examples</h4>
+<h5 id="regular-expressions-is-like">Regular Expressions (is like)</h5>
+<p>The <code>is like</code> operator lets the user search for texts that are <em>like</em> the search value via the support of regular expressions
+In this example, all books are found whose title contains "Narrenschiff" followed by a space and some other characters like "(lat.)" or "(dt.)".</p>
+<p>For general information about regular expressions see this <a href="https://regexone.com">interactive tutorial</a>.</p>
+<p><img alt="Advanced search panel with a search example" src="../../assets/images/advanced-search-regex.png" /></p>
+<h5 id="lucene-parser-syntax-matches">Lucene Parser Syntax (matches)</h5>
+<p>Used with a text property, the <code>matches</code> operator lets the user search for texts that <em>match</em> the search value,
+supporting <a href="https://docs-api.dasch.swiss/08-lucene/lucene-query-parser-syntax/">Lucene Query Parser Syntax</a>.
+In this example, all persons are found whose names contain "Ja" and "ob" with a character in between (represented by the wildcard "?").
+This search finds "Jacob" as well as "Jakob".</p>
+<p><strong>Note the difference between regular expressions and Lucene parser syntax!</strong></p>
+<p><img alt="Advanced search panel with a search example" src="../../assets/images/advanced-search-match.png" /></p>
+<h5 id="specifying-a-linked-resource-matches">Specifying a Linked Resource (matches)</h5>
+<p>Used with a linking property, the <code>matches</code> operator lets the user search for a linked resource that matches the specified properties.
+In this example, the user writes a query looking for all letters that have an author that:
+1. was born after January 1st 1650
+2. whose family name is "Bernoulli"</p>
+<p>This is different from the "is equal to" operator that lets the user specify a certain person (selected from a list).</p>
+<p><img alt="Advanced search panel with a search example" src="../../assets/images/advanced-search-linked-resource.png" /></p>
+<hr />
+<h3 id="expert-search">Expert search</h3>
+<p><img alt="Expert search link is findable in the search menu at the right of the full text search field." src="../../assets/images/search-expert-link.png" /></p>
+<p>The expert search can be more powerful than the advanced search, but requires knowing how to use the query language Gravsearch (based on SparQL and developed by the DaSCH team). With Gravsearch, expert users can build searches by combining text-related criteria with any other criteria.</p>
+<p><strong>For example</strong>: you could search for a page in a manuscript that contains a certain element and also mentions a person, who lived in the same country as another person, who is the author of another author.</p>
+<p><img alt="Expert search is a text area in which you can create Gravsearch queries." src="../../assets/images/search-expert.png" /><em><a href="https://admin.dasch.swiss/search/expert">https://admin.dasch.swiss/search/expert</a> - Search 3: Expert search is a text area in which you can create Gravsearch queries. Here is the default example you can find in the app.</em></p>
+<p>To learn Gravsearch, go to the DSP-API documentation <a href="https://docs-api.dasch.swiss/03-apis/api-v2/query-language/">&rarr; Gravsearch</a></p>
+<hr />
+<h2 id="search-results">Search results</h2>
+<h3 id="simple-list">Simple list</h3>
+<p>The results of the search are displayed in an organised list with a small preview. You can select one result at a time to get more information.</p>
+<p><img alt="Search result 1: Simple list of results, similar to Google's list of results." src="../../assets/images/search-results-list.png" /><em>Search result 1: Simple list of results, similar to Google's list of results.</em></p>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em>
+It is not possible yet to sort or order by criteria when searching with the full text search, use the advanced search or the expert search instead to get back sorted results.</p>
+<hr />
+<h3 id="grid-list-lighttable">Grid list: Lighttable</h3>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em></p>
+<p>The results of the search are displayed in a grid list with a big preview. You can select one result at a time to get more information.</p>
+<p><img alt="Search result 2: A kind of preview list, inspired by Pinterest.com." src="../../assets/images/search-results-grid.png" /><em>Search result 2: A preview list where the results are presented in tiles.</em></p>
+<hr />
+<h3 id="table-excel-like-view">Table: Excel-like view</h3>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em></p>
+<p>The search results are displayed in a table with the option to sort them. This layout is enabled when the search has been performed with <strong>only one source type</strong>.
+Each column of the table corresponds to one metadata.</p>
+<p><img alt="Search result 3: An Excel-like table view to edit multiple sources at once." src="../../assets/images/search-results-table-mockup.png" /><em>Search result 3: An Excel-like table view to edit multiple sources at once.</em></p>
+<hr />
+<h2 id="do-research-and-work-on-your-data">Do research and work on your data</h2>
+<p>Once you have found the desired sources, you can (re)view them and annotate the source itself, the media file, or single metadata values. If you select more than one source, you can compare them in a side-by-side view, link them, edit them all at once, or save them in a collection. A collection is similar to a playlist in a music app or shopping basket in an online store.</p>
+<h3 id="display-a-source">Display a source</h3>
+<p>&#9888; <em>WORK IN PROGRESS</em></p>
+<p>The DSP-APP offers different source views for different media types. There's a viewer for still images, moving images, audio and document files. You can open them from the list of search results. Depending on the media type, DSP-APP offers different tools to work on the source.</p>
+<p>In a still image source, you're able to draw regions on the image and to annotate or transcribe this region. Usually, a still image source is used for book pages, photographs, postcards, letters etc.</p>
+<p>In time-based sources like moving image or audio document, you can mark sequences on the timeline. A transcription tool helps to annotate and to transcribe the sequence.</p>
+<p><img alt="Single source view. The source type in this example is &quot;Photo&quot;." src="../../assets/images/resource-view-with-image.png" /><em>Single source view. The source type in this example is "Page".</em></p>
+<p>DSP-APP will offer a graph view to visualize the connection of a selected source. The graph view is a powerful tool because you will find more information about the source by clicking through the nodes.</p>
+<p><img alt="Graph view of a single source." src="../../assets/images/source-graph-view.png" /><em>Graph view of a single source.</em></p>
+<p>Additionally, you can work on the source directly, e.g, transcribe a moving image or a taped interview or mark regions of interest on still images and on documents.</p>
+<p><img alt="Single source fullframe view with the transcription tool at the bottom. The source type in this example is &quot;Video&quot; with a table-based sequence protocol on the right hand-side." src="../../assets/images/source-selected-fullframe.png" /><em>Single source fullframe view with the transcription tool at the bottom. The source type in this example is "Video" with a table-based sequence protocol on the right hand-side.</em></p>
+<hr />
+<h3 id="select-more-than-one-source">Select more than one source</h3>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em></p>
+<p><img alt="Three sources selected; what do you want to do with them?" src="../../assets/images/source-selected-three.png" /><em>Three sources are selected; what do you want to do with them?</em></p>
+<p>By selecting more than one source, you will be able to edit them all at once, add them to a collection, share or connect them. 
+Or you could compare the sources (see <a href="/user-guide/data/#compare-the-sources">Compare the sources</a>).</p>
+<hr />
+<h3 id="compare-the-sources">Compare the sources</h3>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em></p>
+<p>You will be able to compare from two to six source objects at the same time side by side.</p>
+<p><img alt="Compare 2 to 6 sources with each other, similar to the Mirador web app." src="../../assets/images/source-compare-viewer.png" /><em>Compare 2 to 6 sources with each other, similar to the Mirador web app.</em></p>
+<hr />
+<h3 id="annotate-and-connect-your-data-sources-andor-metadata">Annotate and connect your data (sources and/or metadata)</h3>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em></p>
+<p>A main feature of the flexible data storage that DSP-APP uses is the possibility to annotate and link sources and their metadata. An annotation can be a small note about a date like "Not sure about the birthdate of this person. There's another date mentioned in the source XYZ". Inside the note, it will be possible to link to another source.</p>
+<p>Links in DSP-APP are always bi-directional. If you link source A with source B, then source B knows about this connection. If you find source B, you have the connection to source A as well.</p>
+<hr />
+<h3 id="export-save-or-share-the-data">Export, save or share the data</h3>
+<p>&#9888; <em>NOT YET IMPLEMENTED</em></p>
+<p>Data sets and metadata extracted through a search can be exported as CSV, XML, or other predefined file formats.
+It will be also possible to store full text, advanced, and expert search queries to reuse them later, collect source objects in a collection similar to a playlist of a music app or a shopping basket.</p>
+<p><img alt="The share menu offers many tools to export the data, to send it to someone or to store it in an individual source collection." src="../../assets/images/share-export-menu.png" /><em>The share menu offers many tools to export the data, to send it to someone or to store it in an individual source collection.</em></p>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2021-07-05
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../system/" title="System Administration" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                System Administration
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../user/" title="User Profile" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                User Profile
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2017 - 2021 <a href='https://dasch.swiss' target='_blank'>Data and Service Center for the Humanities (DaSCH)</a>
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['navigation.tabs', 'navigation.sections'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
