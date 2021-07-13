@@ -1,5 +1,22 @@
 # Changelog
 
+## [5.1.0](https://www.github.com/dasch-swiss/dsp-app/compare/v5.0.0...v5.1.0) (2021-07-13)
+
+
+### Bug Fixes
+
+* **ontology:** fix regex pattern in ontology form (DSP-1139) ([#483](https://www.github.com/dasch-swiss/dsp-app/issues/483)) ([4d0703f](https://www.github.com/dasch-swiss/dsp-app/commit/4d0703fde8d42d55a2bf90ecd62c40c269251abd))
+
+
+### Enhancements
+
+* **resource:** upload pdf document (DSP-1776) ([#481](https://www.github.com/dasch-swiss/dsp-app/issues/481)) ([d916b4b](https://www.github.com/dasch-swiss/dsp-app/commit/d916b4be6189fb764a6e4a92aa0999a88d71f40a))
+
+
+### Maintenance
+
+* **resource:** hide file value in properties (DSP-1261) ([#484](https://www.github.com/dasch-swiss/dsp-app/issues/484)) ([4ade17f](https://www.github.com/dasch-swiss/dsp-app/commit/4ade17f86e91d28b9a751e63b4d6480dfa1d5939))
+
 ## [5.0.0](https://www.github.com/dasch-swiss/dsp-app/compare/v4.11.1...v5.0.0) (2021-07-05)
 
 
